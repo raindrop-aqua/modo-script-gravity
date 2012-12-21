@@ -1,0 +1,14 @@
+application: modo-script-gravity-ws
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon.ico
+  static_files: resource/favicon.ico
+  upload: resource/favicon.ico
+
+- url: /.*
+  script: main.app
+
